@@ -1,0 +1,16 @@
+Folder TOPPAR:
+Files used to generate initial structures for parametrizationi by running a MD simulation.
+
+Folder PREPRATION:
+- Script "gen_pdbs.sh" will extract the structures out of pdb, generates Gaussian input file, submits it and extract the ab initio energy computed.
+- Takes as arguments the PDB file containing the structures, a list of template atoms, a Gaussian options file, the total zero of energy in a.u., total no. of atoms, template pdb file
+
+Folder FITTING:
+- Used to paramterize the FF for reactant and product
+- To run UvFit, execute the binary file followed by the name of configuration file(includes the lower and upper limit of data values)
+ ./Uvfit39rev4.x fit-reactant.inp
+
+Aim of parametrization is to reach a RMSD of less than 1 kcal/mol and the so parametrized FF will then be used to generate new reference structures by running a nnew MD.
+
+The program will try to minimize the energies without knowledge of the 'meaning' of parameters and it is the users responsibility to take care of the resulting parameters are chemically and physically meaningful.
+
