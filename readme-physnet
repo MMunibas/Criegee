@@ -19,7 +19,8 @@ The data sets can be accessed using python:
 
 The different keywords of the python dictionary can be listed using
 >>> data.files
->>>['Q', 'D', 'F', 'Z', 'R', 'E', 'N']
+>>>['N', 'E', 'Q', 'D', 'Z', 'R', 'F']
+
 
 and the individual entries can be loaded using the appropriate
 keyword, e.g. for the energy
