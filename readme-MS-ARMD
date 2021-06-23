@@ -1,5 +1,5 @@
 Folder TOPPAR:
-Files used to generate initial structures for parametrizationi by running a MD simulation.
+Files used to generate initial structures for parametrization by running a MD simulation.
 
 Folder PREPRATION:
 - Script "gen_pdbs.sh" will extract the structures out of pdb, generates Gaussian input file, submits it and extract the ab initio energy computed.
